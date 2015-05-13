@@ -19,10 +19,8 @@ class ApplicationController < ActionController::Base
   def after_sign_in_path_for(resource)
     if !current_user.waitlisted?
       schedule_city_path(current_user.home_city)
-    elsif current_user.home_city.nil?
-      cities_path
     else
-      forbes_city(current_user.home_city)
+      redirect_to root_path
     end
   end
 

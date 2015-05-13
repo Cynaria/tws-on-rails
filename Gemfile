@@ -24,7 +24,6 @@ gem 'rails_12factor', group: :production
 gem 'turbolinks'
 gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 5.0'
-gem 'underscore-rails'
 gem "active_model_serializers"
 gem 'bitmask_attributes', '~> 1.0'
 

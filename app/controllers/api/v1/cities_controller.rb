@@ -1,6 +1,6 @@
 class Api::V1::CitiesController < ApplicationController
   def index
-    render json: City.all, each_serializer: CityOverviewSerializer
+    render json: City.all
   end
 
   def create

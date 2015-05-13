@@ -115,7 +115,7 @@ private
     fill_in 'user_nickname', with: name
     fill_in 'user_email', with: email
     fill_in 'user_password', with: SecureRandom.hex
-    find('input[name="commit"]').click
+    click_button "Let's Go!"
   end
 
   def attend_tt(tea_time)

@@ -3,6 +3,6 @@
 # and use the name of the city to generate a code
 class CityCodeGenerator
   def self.generate
-    SecureRandom.hex(8)
+    SecureRandom.hex(4)
   end
 end
