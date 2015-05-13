@@ -22,11 +22,11 @@
           </div>
         </div>
       </div>
+      <%= link_to suggest_cities_path do %>
+        <button class="btn new-city-cta">Don't see your city listed? Add a new one</button>
+      <% end %>
     </div>
 
-    <%= link_to suggest_cities_path do %>
-      <button class="btn new-city-cta">Don't see your city listed? Add a new one</button>
-    <% end %>
   </div>
 </div>
 <%= render partial: 'shared/new_footer' %>
