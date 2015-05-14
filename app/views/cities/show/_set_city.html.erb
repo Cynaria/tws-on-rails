@@ -7,7 +7,7 @@
     <%= f.submit "This is my *really* my city!" %>
   <% end %>
 <% elsif current_user && current_user.home_city == @city%>
-  <p>Thanks for signing up! We'll let you know when you can start to join tea times in <%= @city.name %></p>
+  <p>Thanks for signing up! Keep an eye on your email for when we send out your invites for the best conversations of all time in <%= @city.name %>!</p>
 <% else %>
   <p>Not where you want to join Tea With Strangers? <%= link_to 'Go here to change it.', cities_path %>
 <% end %>
