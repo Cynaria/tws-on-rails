@@ -1,4 +1,18 @@
 <div class="city-container">
+	<h2>Thanks for joining Tea With Strangers in <%= @city.name %>!</h2>
+	<p>
+		We’re thrilled to welcome you to the Tea With Strangers community and can’t wait to see you at a teatime soon. 
+	</p>
+	<p> 
+		Unfortunately, there are approximately <%=
+		number_with_delimiter(User.all.count * (rand(100) + 1))%> people 
+		who are also excited about tea time, and we're having trouble 
+		stopping our website from melting.
+	</p>
+	<p >
+	  We're very sorry for the inconvenience, and we'll shoot you an email when things
+	  have calmed down.
+	</p>
 	<h2>You're awesome for being into this.</h2>
 	<p>
 		There's something to be said about the type of person that goes to 
@@ -14,18 +28,9 @@
 		(hopefully) leave ya wondering, "Wait, what if I found a way to 
 		take this leap on everyone I ever crossed paths with?"
 	</p>
-At TWS, we're trying to answer that question. And we couldn't do it without you.
-
-
-	<p> 
-		Unfortunately, there are approximately <%=
-		number_with_delimiter(User.all.count * (rand(100) + 1))%> people 
-		who are also excited about tea time, and we're having trouble 
-		stopping our website from melting.
-	</p>
 	<p>
-	  We're very sorry for the inconvenience, and we'll shoot you an email when things
-	  have calmed down.
+		Imagine that!
 	</p>
+
 	<%= render partial: 'cities/show/set_city' %>
 </div>
